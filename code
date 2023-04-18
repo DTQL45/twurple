@@ -1,0 +1,8 @@
+import { StaticAuthProvider } from '@twurple/auth';
+import { Bot, createBotCommand } from '@twurple/easy-bot';
+
+const clientId = 'nkgf2j8z1peyo8psczyxcxfrjjisgs';
+const accessToken = 'stw9rnuyhajw0d0gjur8jjc50a64jj';
+const authProvider = new StaticAuthProvider(clientId, accessToken);
+
+const bot = new Bot({ authProvider, channels: ['dtql_'] });
